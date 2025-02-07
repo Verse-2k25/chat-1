@@ -17,8 +17,8 @@ export async function createUser(req: CreateUserType, res: Response) {
                 $or: [{ email }, { name }, { email }]
             }
         );
-        if (user) {
-            res.status(400).send({ message: "User already exists" });
+        if (!user) {
+            throw new Error("User does not  exists");
         }
         const saltedRounds: number = 10;
         const hashedPassword = await bcrypt.hash(password, saltedRounds);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "dev1": "nodemon dist/controllers/websockets/websocket.js",
+    "ws": "nodemon dist/controllers/websockets/websocket.js",
     "dev": "nodemon dist/index.js",
     "watch": "tsc --watch"
   },
@@ -26,6 +26,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
     "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
     "typescript": "^5.7.3",
     "ws": "^8.18.0"
   }
