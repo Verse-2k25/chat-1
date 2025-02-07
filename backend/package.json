@@ -1,0 +1,32 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev1": "nodemon dist/controllers/websockets/websocket.js",
+    "dev": "nodemon dist/index.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/ws": "^8.5.14",
+    "bcrypt": "^5.1.1",
+    "chatapp": "file:",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3",
+    "ws": "^8.18.0"
+  }
+}
